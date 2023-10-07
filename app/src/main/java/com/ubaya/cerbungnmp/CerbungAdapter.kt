@@ -25,9 +25,9 @@ class CerbungAdapter():RecyclerView.Adapter<CerbungAdapter.CerbungViewHolder>() 
             val builder = Picasso.Builder(holder.itemView.context)
             builder.listener{picasso, uri, exception -> exception.printStackTrace()}
             Picasso.get().load(url).into(imgPoster)
-            txtJudul.text= Global.ceritaBersambung[position].title
-            txtAuthor.text= "by" + Global.ceritaBersambung[position].author
-            txtContent.text = Global.ceritaBersambung[position].cerita
+            txtJudul.text= Global.ceritaBersambung[position].judul
+            txtAuthor.text= "by " + Global.ceritaBersambung[position].penulis
+            txtContent.text = Global.ceritaBersambung[position].sinopsis
 
         }
 
